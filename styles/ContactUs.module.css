@@ -1,0 +1,139 @@
+.container {
+    width: 100%;
+    /* padding-right: 40px; */
+    /* padding-left: 40px; */
+  }
+
+  .iconContainer {
+    background: rgba(0, 0, 0, 0.14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  } 
+ 
+  p.paragrph {
+        font-family: 'Roboto' !important;
+        /* font-style: normal; */
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+        color: #A2A2A2 !important;
+        margin: 5px;
+    }
+  
+
+.contactFormSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 110px;
+ }
+.contactFormSection .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactFormSection .row .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.row .imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.contactFormSection .row .formContainer .contentContainer p {
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #A2A2A2 !important;
+}
+
+.contactFormSection .row .formbox {
+    width: 100%;
+}
+
+.contact-form-section .row .formbox input {
+    height: 53px;
+}
+
+.contactFormInput {
+    background: #F3F7FF !important;
+    border-radius: 6px !important;
+    margin-bottom: 10px !important;
+    width: 100% !important;
+    height: 53px !important;
+    border: none;
+    padding: 15px;
+    border: 1px solid #ced4da;
+}
+
+.banner__sec {
+    margin-bottom: 4rem !important;
+}
+
+@media (max-width: 768px) {
+    .contactFormInput {
+        background: #F3F7FF !important;
+        border-radius: 6px !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+        height: 40px !important;
+        border: none;
+        padding: 15px;
+        border: 1px solid #ced4da;
+    }
+    .banner__sec {
+        margin-bottom: 0rem !important;
+    }
+     
+}
+
+
+
+.contactFormArea {
+    background: #F3F7FF;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    color: #555;
+
+}
+ 
+.submitbtn {
+    color: white;
+    font-family: 'Roboto';
+    background-color: #D9BD3E;
+    border: none;
+    float: right;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 6px;
+    padding: 14px 44px;
+}
+
+
+/* END */
+
+.courses-page-section-6 {
+    background: #E7EDFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}

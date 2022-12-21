@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.container article {
+    background: lightgray;
+    border: ipx solid grey;
+    padding: 2rem;
+    align-items: center;
+}
+.container header {
+    background: lightgray;
+    border: ipx solid grey;
+    padding: 2rem;
+    align-items: center;
+}
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+
+.banner__sec {
+    margin-bottom: 4rem !important;
+}
+
+@media (max-width: 768px) {
+ 
+    .banner__sec {
+        margin-bottom: 0rem !important;
+    }
+     
+}
+
+
+
+ 
+ 
+.submitbtn {
+    color: white;
+    font-family: 'Roboto';
+    background-color: #D9BD3E;
+    border: none;
+    float: right;
+    font-size: 18px;
+    line-height: 27px;
+    border-radius: 6px;
+    padding: 14px 44px;
+}
+
+
+ 
