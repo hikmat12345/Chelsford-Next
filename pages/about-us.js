@@ -3,10 +3,14 @@ import contactPage from '../styles/ContactUs.module.css'
 
 import { FaFacebookF, FaPhone, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { MdEmail, MdLocationOn } from 'react-icons/md';
+import Header from './../components/header/Header';
+import Footer from './../components/Footer/Footer';
 
 function AboutUs(props) {
   return (
     <>
+        <Header/>
+
       <div className="bg-[#222] p-28">
         {/* <div className="container"> */}
         {/* <div className="row"> */}
@@ -85,7 +89,7 @@ function AboutUs(props) {
         </div>
       </div>
 
-
+      <Footer/>                  
     </>
   );
 }

@@ -3,10 +3,13 @@ import contactPage from '../styles/ContactUs.module.css'
 
 import { FaFacebookF, FaPhone, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { MdEmail, MdLocationOn } from 'react-icons/md';
+import Header from './../components/header/Header';
+import Footer from './../components/Footer/Footer';
 
 function ContactUs(props) {
   return (
     <>
+    <Header/>
       <div className ="">
       <img
         src="https://chelsford.com/public/chelsforImages/contact-banner.webp"
@@ -168,7 +171,7 @@ function ContactUs(props) {
           </div>
         </div>
       </div>
-
+<Footer/>
     </>
   );
 }
