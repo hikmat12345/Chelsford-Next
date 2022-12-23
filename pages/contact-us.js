@@ -6,7 +6,10 @@ import { MdEmail, MdLocationOn } from 'react-icons/md';
 import Header from './../components/header/Header';
 import Footer from './../components/Footer/Footer';
 
+const url = "https://newadminapi-preprod.findanexpert.net/api/Users/contactus"
+
 function ContactUs(props) {
+
   return (
     <>
     <Header/>
