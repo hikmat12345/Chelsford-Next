@@ -44,7 +44,7 @@ const VideoContainer = () => {
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
-                      <a href="">
+                      <a href="" className={home.link__tag__a2}>
                         <h3 className={home.contentContainer__text}>
                           Training on Men's Laser Hair Removal
                         </h3>
@@ -69,7 +69,7 @@ const VideoContainer = () => {
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
-                      <a href="">
+                      <a href="" className={home.link__tag__a2}>
                         <h3 className={home.contentContainer__text}>
                           Training on Laser Hair Removal on Asian Skin
                         </h3>
@@ -95,7 +95,7 @@ const VideoContainer = () => {
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
-                      <a href="">
+                      <a href="" className={home.link__tag__a2}>
                         <h3 className={home.contentContainer__text}>
                           Training on Face Test Patch
                         </h3>

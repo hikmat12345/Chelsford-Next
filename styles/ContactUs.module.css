@@ -1,7 +1,5 @@
-.container {
+.contactUs__container {
     width: 100%;
-    /* padding-right: 40px; */
-    /* padding-left: 40px; */
   }
 
   .iconContainer {
@@ -14,15 +12,35 @@
     height: 60px;
   } 
  
-  p.paragrph {
+  .contactUs__container p {
         font-family: 'Roboto' !important;
         /* font-style: normal; */
         font-weight: 300;
         font-size: 18px;
         line-height: 27px;
-        color: #A2A2A2 !important;
+        color: #A2A2A2;
         margin: 5px;
     }
+
+.contactUs__container h2 {
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 35px;
+    color: #110B57 !important;
+}
+
+.contactUs__container h3 {
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: none;
+    text-align: center !important; 
+    color: #1F105A;
+}
   
 
 .contactFormSection {

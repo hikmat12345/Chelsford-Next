@@ -21,28 +21,28 @@ const Footer = () => {
                   <li className={home.list__social__icons}>
                     <a href="/" className={home.link__social__icons}>
                       <i>
-                        <SlSocialFacebook />
+                        <SlSocialFacebook className={home.icons__all} />
                       </i>
                     </a>
                   </li>
                   <li className={home.list__social__icons}>
                     <a href="/" className={home.link__social__icons}>
                       <i>
-                        <FaInstagram />
+                        <FaInstagram className={home.icons__all} />
                       </i>
                     </a>
                   </li>
                   <li className={home.list__social__icons}>
                     <a href="/" className={home.link__social__icons}>
                       <i>
-                        <CiTwitter />
+                        <CiTwitter className={home.icons__all} />
                       </i>
                     </a>
                   </li>
                   <li className={home.list__social__icons}>
                     <a href="/" className={home.link__social__icons}>
                       <i>
-                        <TiSocialYoutubeCircular />
+                        <TiSocialYoutubeCircular className={home.icons__all} />
                       </i>
                     </a>
                   </li>
@@ -175,40 +175,41 @@ const Footer = () => {
               <ul className={home.footer__container__2__course__list}>
                 <li className={home.footer__container__2__course__list__number}>
                   <p className={home.footer__container__2__course__list__link}>
-                    <i>
+                    <i className={home.footer__icons_all}>
                       <BiPhone />
-                      <a href="tel:0800 955 0054">0800 955 0054</a>
+                      <a href="tel:0800 955 0054" className={home.text__a}>
+                        0800 955 0054
+                      </a>
                     </i>
                   </p>
                 </li>
                 <li className={home.footer__container__2__course__list__number}>
                   <p className={home.footer__container__2__course__list__link}>
-                    <i>
+                    <i className={home.footer__icons_all}>
                       <CiMail />
-                      <a href="mailto:team@chelsford.com">team@chelsford.com</a>
+                      <a
+                        href="mailto:team@chelsford.com"
+                        className={home.text__a}
+                      >
+                        team@chelsford.com
+                      </a>
                     </i>
                   </p>
                 </li>
                 <li className={home.footer__container__2__course__list__number}>
                   <p className={home.footer__container__2__course__list__link}>
-                    <strong>
-                      <i>
-                        <FaMapMarkerAlt />
-                      </i>
-                    </strong>
-                    <span>
+                    <strong></strong>
+                    <span className={home.footer__icons_all}>
+                      <FaMapMarkerAlt />
                       31-32 Eastcastle Street, <br /> London W1W 8DL
                     </span>
                   </p>
                 </li>
                 <li className={home.footer__container__2__course__list__number}>
                   <p className={home.footer__container__2__course__list__link}>
-                    <strong>
-                      <i>
-                        <FaMapMarkerAlt />
-                      </i>
-                    </strong>
-                    <span>
+                    <strong></strong>
+                    <span className={home.footer__icons_all}>
+                      <FaMapMarkerAlt />
                       31-32 Eastcastle Street, <br /> London W1W 8DL
                     </span>
                   </p>

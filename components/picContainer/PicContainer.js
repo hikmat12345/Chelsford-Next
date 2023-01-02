@@ -40,7 +40,7 @@ const PicContainer = () => {
               ></input>
             </div>
             <div className={home.send__msg__div}>
-              <div>
+              <div className={home.send__button__div}>
                 <span className={home.msg__text}>Send Massage</span>
                 <button className={home.send__msg__btn}>
                   <span>→</span>
