@@ -16,7 +16,7 @@ const About = () => {
           Chelsford Institute of Higher Education
         </h2>
         <p className={home.section__row__text}>
-         ali Institute of Higher Education is a leading provider of
+          Chelsford Institute of Higher Education is a leading provider of
           internationally recognised qualifications in the UK, helping students
           excel and make a difference in this world. We have more than 100
           courses with full time, part-time, evening and online options to suit
