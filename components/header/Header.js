@@ -41,13 +41,15 @@ const Header = () => {
   return (
     <div className={home.header__main}>
       <div className={home.header__img}>
-        <Image
-          className={home.header__logo}
-          src={myHeader}
-          alt="header logo"
-          width="314.1px"
-          height="91.89px"
-        />
+        <Link href={"/"}>
+          <Image
+            className={home.header__logo}
+            src={myHeader}
+            alt="header logo"
+            width="314.1px"
+            height="91.89px"
+          />
+        </Link>
       </div>
       <div className={home.short_tab}>
         <div className={home.courses__tab__container}>
@@ -714,7 +716,7 @@ const Header = () => {
         <div className={home.sub__header2}>
           <ul className={home.navbar}>
             <button onClick={() => setToggle1(!toggle1)}>
-              <Link legacyBehavior href="/">
+              <Link legacyBehavior href="">
                 <a className={home.courses__text1}>Courses</a>
               </Link>
             </button>

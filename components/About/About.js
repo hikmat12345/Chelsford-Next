@@ -28,48 +28,6 @@ const About = () => {
           higher education.
         </p>
       </div>
-
-      {/* <div className={home.main_div}>
-        <div className={home.main_div__animation__1}>
-          <div className={home.animation__box__1}>
-            <div className={home.content_box_animation}>
-              <div className={home.image_part}>
-                <Image className={home.aboutPic} src={picMainDiv} />
-              </div>
-              <div className={home.text__part__1}>
-                <h3 className={home.text__part__heading__home__section}>
-                  Legal requirements satisfied
-                </h3>
-                <p className={home.text__part__text__home__section}>
-                  Backed by UK’s top awarding bodies, we offer qualifications
-                  that satisfy insurance & other legal requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className={home.main_div2}>
-        <div className={home.main_div__animation__2}>
-          <div className={home.animation__box__2}>
-            <div className={home.content_box_animation2}>
-              <div className={home.image_part2}>
-                <Image className={home.aboutPic2} src={picMainDiv} />
-              </div>
-              <div className={home.text__part__2}>
-                <h3 className={home.text__part__heading__home__section2}>
-                  Legal requirements satisfied
-                </h3>
-                <p className={home.text__part__text__home__section2}>
-                  Backed by UK’s top awarding bodies, we offer qualifications
-                  that satisfy insurance & other legal requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className={home.flip__card}>
         <div className={home.flip__card__inner}>
           <div className={home.front__end}>
