@@ -5,30 +5,9 @@ import phone from "../../components/images/phone.png"
 import Link from "next/link"
 import home from "../../styles/HomePage.module.css"
 import { FaBars } from "react-icons/fa"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { FcPhone } from "react-icons/fc"
-function Modal({ children, shown, close }) {
-  return shown ? (
-    <div
-      className={home.modal__backdrop}
-      onClick={() => {
-        // close modal when outside of modal is clicked
-        close()
-      }}
-    >
-      <div
-        className="modal-content"
-        onClick={(e) => {
-          // do not close modal if anything inside modal content is clicked
-          e.stopPropagation()
-        }}
-      >
-        <button onClick={close}>Close</button>
-        {children}
-      </div>
-    </div>
-  ) : null
-}
+
 const Header = () => {
   const [toggle, setToggle] = useState(false)
   const [toggle1, setToggle1] = useState(false)
@@ -37,9 +16,20 @@ const Header = () => {
   const [toggle4, setToggle4] = useState(false)
   const [toggle5, setToggle5] = useState(false)
   const [toggle6, setToggle6] = useState(false)
-
+  let menuRef = useRef()
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target)) {
+        setToggle1(false)
+      }
+    }
+    document.addEventListener("mousedown", handler)
+    return () => {
+      document.removeEventListener("mousedown", handler)
+    }
+  })
   return (
-    <div className={home.header__main}>
+    <div className={home.header__main} ref={menuRef}>
       <div className={home.header__img}>
         <Link href={"/"}>
           <Image
@@ -714,7 +704,7 @@ const Header = () => {
           </div>
         )}
         <div className={home.sub__header2}>
-          <ul className={home.navbar}>
+          <ul className={home.navbar} ref={menuRef}>
             <button onClick={() => setToggle1(!toggle1)}>
               <Link legacyBehavior href="">
                 <a className={home.courses__text1}>Courses</a>
