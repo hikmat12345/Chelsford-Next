@@ -1,0 +1,121 @@
+.main__section {
+  width: 100%;
+  padding: 62px 200px 40px;
+  background-image: url(https://chelsford.com/public/banners/remote-learning-back-to-school-girl-student-study.png);
+  background-repeat: no-repeat;
+  background-position: 64% -7%;
+  min-height: 613px;
+  background-size: cover;
+}
+.container__fluid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.main__row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.heading__section {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+.heading__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 58px;
+  color: #1e185f !important;
+}
+.para__text {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #212529 !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--bs-body-font-family);
+  font-size: 1rem;
+  font-size: var(--bs-body-font-size);
+  font-weight: 400;
+  font-weight: var(--bs-body-font-weight);
+  line-height: 1.5;
+  line-height: var(--bs-body-line-height);
+  color: #212529;
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: #fff;
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.extra__space {
+  width: 40.33%;
+}
+.secont__row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.sub__row {
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+.tablinks {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  transition: 0.3s;
+  background: hsla(0, 0%, 100%, 0.5882352941176471);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06) !important;
+  border-radius: 22px;
+  outline: medium none invert;
+  outline: initial;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1e185f;
+  border: initial;
+  margin-top: 5px;
+  width: 100%;
+  text-align: left;
+  padding: 7px 19px;
+  cursor: pointer;
+}
+.tablinks:hover {
+  background-color: rgba(217, 189, 62, 0.7294117647058823);
+  color: white;
+}
+.ul__list {
+  list-style: none;
+}
+.course__table__div {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  color: #212529;
+  background-color: white;
+}
+.course__content__div {
+  display: block;
+  height: 397px;
+  overflow-y: scroll;
+}

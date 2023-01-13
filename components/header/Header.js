@@ -7,7 +7,20 @@ import home from "../../styles/HomePage.module.css"
 import { FaBars } from "react-icons/fa"
 import { useState, useEffect, useRef } from "react"
 import { FcPhone } from "react-icons/fc"
-
+import { TfiBell } from "react-icons/tfi"
+import bell from "../../components/images/bell.png"
+import pdown from "../../components/images/profile_dropdown.svg"
+import odown from "../../components/images/ordersdropdown.svg"
+import paydown from "../../components/images/paymentdropdown.svg"
+import { IoIosLogOut } from "react-icons/io"
+import { TiDelete } from "react-icons/ti"
+import { IoIosArrowDropdown } from "react-icons/io"
+import aboutEM from "../images/About Expert_mobile.svg"
+import contactus_mobile from "../images/Contact Us_mobile.svg"
+import payment_m from "../images/payment_mobile.svg"
+import oder_m from "../images/orders_mobile.svg"
+import mobile_p from "../images/profile_mobile.svg"
+import profileavatar from "../images/profile-avatar.png"
 const Header = () => {
   const [toggle, setToggle] = useState(false)
   const [toggle1, setToggle1] = useState(false)
@@ -16,6 +29,7 @@ const Header = () => {
   const [toggle4, setToggle4] = useState(false)
   const [toggle5, setToggle5] = useState(false)
   const [toggle6, setToggle6] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
   let menuRef = useRef()
   useEffect(() => {
     let handler = (e) => {
@@ -44,7 +58,10 @@ const Header = () => {
       <div className={home.short_tab}>
         <div className={home.courses__tab__container}>
           <div className={home.courses__tab}>
-            <button onClick={() => setToggle3(!toggle3)}>
+            <button
+              className={home.short__tab__button}
+              onClick={() => setToggle3(!toggle3)}
+            >
               <span className={home.short__heading}>Courses</span>
             </button>
           </div>
@@ -69,19 +86,55 @@ const Header = () => {
       </button>
       {toggle && (
         <div id="myDiv" className={home.short_tab_expand}>
+          <div className={home.profile__pic__div}>
+            <Image className={home.profile__pictures} src={profileavatar} />
+            <div className={home.profile__name}>test dfte</div>
+          </div>
           <ul className={home.short_tab_ul}>
             <li className={home.short_tab_li}>
+              <a className={home.short_a_li} href="/profile">
+                <Image src={mobile_p} />
+                Profile
+              </a>
+            </li>
+            <li className={home.short_tab_li}>
+              <a className={home.short_a_li} href="/booking">
+                <Image src={oder_m} />
+                Your Bookings
+              </a>
+            </li>
+            <li className={home.short_tab_li}>
+              <a className={home.short_a_li} href="/payment">
+                <Image src={payment_m} />
+                Payments Details
+              </a>
+            </li>
+            <li className={home.short_tab_li}>
               <a className={home.short_a_li} href="/about">
-                About
+                <Image src={aboutEM} />
+                About Chelsford
               </a>
             </li>
             <li className={home.short_tab_li}>
               <a className={home.short_a_li} href="/contact-us">
-                Contact
+                <Image src={contactus_mobile} />
+                Contact us
+              </a>
+            </li>
+            <li className={home.short_tab_li}>
+              <a className={home.short_a_li} href="/contact-us">
+                <Image src={pdown} />
+                Logout
+              </a>
+            </li>
+            <li className={home.short_tab_li}>
+              <a className={home.short_a_li} href="/contact-us">
+                <Image src={pdown} />
+                Delete Your Account
               </a>
             </li>
           </ul>
-          <ul className={home.short_tab_ul}>
+          {/* <ul className={home.short_tab_ul}>
             <li className={home.short_tab_li}>
               <a className={home.short_a_li} href="tel:0800 955 0054">
                 <i className={home.short__i__phone}>
@@ -98,12 +151,12 @@ const Header = () => {
                 Login
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       )}
       <div>
         <div className={home.sub__headers}>
-          <button className={home.portal__button}>Portal</button>
+          <button className={home.portal__button}>Account</button>
           <Image
             className={home.cart__img}
             src={cart}
@@ -112,6 +165,40 @@ const Header = () => {
             height="17.01px"
             Top="-0.05px"
           />
+          <div
+            className={home.dropdown__button}
+            onClick={() => setDropdown(!dropdown)}
+          >
+            <IoIosArrowDropdown style={{ marginTop: "6px" }} />
+          </div>
+          {dropdown && (
+            <div className={home.top_small_dropdown__main}>
+              <div className={home.top_small_dropdown_sub}>
+                <div className={home.top_dropdown_1}>
+                  <div className={home.top_dropwdown_item}>
+                    <Image src={pdown} />
+                    <p className={home.dropdown__heading}>Profile</p>
+                  </div>
+                  <div className={home.top_dropwdown_item}>
+                    <Image src={odown} />
+                    <p className={home.dropdown__heading}>Your Booking</p>
+                  </div>
+                  <div className={home.top_dropwdown_item}>
+                    <Image src={paydown} />
+                    <p className={home.dropdown__heading}>Payment</p>
+                  </div>
+                </div>
+                <div className={home.top_dropdown_2}>
+                  <IoIosLogOut />
+                  <p className={home.dropdown__heading}>Logout</p>
+                </div>
+                <div className={home.top_dropdown_2}>
+                  <TiDelete />
+                  <p className={home.dropdown__heading}>Delete Your Account</p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
         <ul className={home.hover__div}>
           {toggle1 && (
@@ -705,11 +792,14 @@ const Header = () => {
         )}
         <div className={home.sub__header2}>
           <ul className={home.navbar} ref={menuRef}>
-            <button onClick={() => setToggle1(!toggle1)}>
+            <div
+              className={home.course__div__button}
+              onClick={() => setToggle1(!toggle1)}
+            >
               <Link legacyBehavior href="">
                 <a className={home.courses__text1}>Courses</a>
               </Link>
-            </button>
+            </div>
             <div className={home.navbar__web}>
               <Link legacyBehavior href="/about-us">
                 <a className={home.courses__text}>About Us</a>
@@ -717,9 +807,9 @@ const Header = () => {
               <Link legacyBehavior href="/contact-us">
                 <a className={home.courses__text}>Contact</a>
               </Link>
-              <Link legacyBehavior href="/listing">
+              {/* <Link legacyBehavior href="/listing">
                 <a className={home.courses__text}>Models</a>
-              </Link>
+              </Link> */}
             </div>
             <div className={home.phone__logo__No}>
               <Image

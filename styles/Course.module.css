@@ -1,0 +1,97 @@
+.main__section {
+  width: 100%;
+  height: auto;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  background-color: #f2f2f2;
+}
+.main__container {
+  max-width: 1140px;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.main__heading {
+  color: #1e185f !important;
+  font-family: "Roboto" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 19px;
+  text-align: center !important;
+  padding-bottom: 3rem !important;
+  padding-top: 1rem !important;
+}
+.main__row {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+.box__div {
+  padding-right: 0.25rem !important;
+  padding-left: 0.25rem !important;
+}
+.course_module_label {
+  width: 245px;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+.span__div {
+  font-size: 1.75rem !important;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  text-align: center !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  margin-top: 3rem !important;
+}
+.span__no {
+  background-color: #d9bd3e;
+  color: #1e185f !important;
+  margin: 0 auto;
+  border-radius: 2rem;
+  margin-top: 0 !important;
+  font-size: 16px !important;
+  padding: 8px 12px;
+}
+.para__p {
+  color: #1e185f;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  font-size: 14px;
+}
+.button__div {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
+}
+.button__div2 {
+  background-color: #d9d9d9;
+  border-radius: 60px;
+  text-align: center;
+  justify-content: center;
+  width: 51px;
+  margin: auto;
+  height: 51px;
+}
+.button__upDown {
+  height: 50px;
+  width: 50px;
+  border-radius: 25%;
+  background-color: #1e185f;
+  border: none;
+  cursor: pointer;
+}

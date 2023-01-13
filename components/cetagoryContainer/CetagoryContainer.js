@@ -1,6 +1,7 @@
 import Image from "next/image"
 import image from "../../components/images/image.png"
 import home from "../../styles/HomePage.module.css"
+import Link from "next/link"
 const CetagoryContainer = () => {
   return (
     <div className={home.CetagoryContainer__main}>
@@ -19,20 +20,22 @@ const CetagoryContainer = () => {
                 <div className={home.custom__carosal__row}>
                   <div className={home.all__row}>
                     <div className={home.row__col}>
-                      <div className={home.rom__img}>
-                        <Image
-                          className={home.row__images}
-                          src={image}
-                          width="100%"
-                          height="auto"
-                        />
-                        <div className={home.content_box_feature}>
-                          <span className={home.feature_title}>
-                            Laser Practitioner Diploma VTCT
-                          </span>
-                          <span className={home.feature_price}>£3330</span>
+                      <Link className={home.Link} href="/services">
+                        <div className={home.rom__img}>
+                          <Image
+                            className={home.row__images}
+                            src={image}
+                            width="100%"
+                            height="auto"
+                          />
+                          <div className={home.content_box_feature}>
+                            <span className={home.feature_title}>
+                              Laser Practitioner Diploma VTCT
+                            </span>
+                            <span className={home.feature_price}>£3330</span>
+                          </div>
                         </div>
-                      </div>
+                      </Link>
                     </div>
                     <div className={home.row__col}>
                       <div className={home.rom__img}>

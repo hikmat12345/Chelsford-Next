@@ -43,7 +43,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/__9PvE23Fdjw"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div name="slide-2" id="slide-2">
@@ -54,7 +54,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/7WPC9RyGwug"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-3">
@@ -65,7 +65,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/8zj7k1lzF44"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-4">
@@ -76,7 +76,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/BX__NrFqGfEE"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-5">
@@ -87,7 +87,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/HFzxQ5OE5FM"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-6">
@@ -98,7 +98,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/C_NsqwVN5BE"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-7">
@@ -109,7 +109,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/fUVbzRBAH48"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
 
@@ -121,7 +121,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/Ik__Esn6EoJk"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-9">
@@ -132,7 +132,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/PYT008A__Gcw"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-10">
@@ -143,7 +143,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/PqSGV5SEEQM"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-11">
@@ -154,7 +154,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/OYfSDOKbKmY"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
             <div id="slide-12">
@@ -165,7 +165,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/oSd1Ze2H2j4"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
           </div>
@@ -180,7 +180,7 @@ const VideoContainer = () => {
                 src="https://www.youtube.com/embed/HFzxQ5OE5FM"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowfullscreen=""
+                allowFullScreen=""
               ></iframe>
             </div>
           </div> */}
@@ -198,7 +198,7 @@ const VideoContainer = () => {
                           src="https://www.youtube.com/embed/__9PvE23Fdjw"
                           frameborder="0"
                           allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                          allowfullscreen=""
+                          allowFullScreen=""
                         ></iframe>
                       </Link>
                     </div>
@@ -224,7 +224,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/7WPC9RyGwug"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -250,7 +250,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/8zj7k1lzF44"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -276,7 +276,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/BX__NrFqGfEE"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -302,7 +302,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/HFzxQ5OE5FM"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -328,7 +328,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/C_NsqwVN5BE"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -353,7 +353,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/fUVbzRBAH48"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -378,7 +378,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/Ik__Esn6EoJk"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -404,7 +404,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/PYT008A__Gcw"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -430,7 +430,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/PqSGV5SEEQM"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -456,7 +456,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/OYfSDOKbKmY"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>
@@ -481,7 +481,7 @@ const VideoContainer = () => {
                         src="https://www.youtube.com/embed/oSd1Ze2H2j4"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen=""
+                        allowFullScreen=""
                       ></iframe>
                     </div>
                     <div className={home.contentContainer}>

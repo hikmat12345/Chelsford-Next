@@ -17,6 +17,9 @@ a {
 * {
   box-sizing: border-box;
 }
+Link {
+  text-decoration: none !important;
+}
 
 @media (prefers-color-scheme: dark) {
   html {
