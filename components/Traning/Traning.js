@@ -1,7 +1,46 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import traning from "../../styles/Traning.module.css"
 import Link from "next/link"
+// export const getStatic = async () => {
+//   const res = await fetch(
+//     `https://newadminapi-preprod.findanexpert.net/api/Services/GetServices/Laser%20Training/1`,
+//     {
+//       cache: "no-cache",
+//       headers: {
+//         Authorization: "Bearer token",
+//       },
+//     }
+//   )
+//   const data = await res.json()
+//   console.log(data, "data")
+
+//   return data
+// }
+// useEffect(() => {
+//   const url =
+//     "https://newadminapi-preprod.findanexpert.net/api/Services/GetServices/Laser%20Training/1"
+
+//   const getStatic = async () => {
+//     const res = await fetch(url, {
+//       cache: "no-cache",
+//       headers: {
+//         Authorization: "Bearer token",
+//       },
+//     })
+//     const data = await res.json()
+//     console.log(data, "data")
+
+//     return data
+//   }
+
+//   fetchData()
+// }, [])
 const Traning = () => {
+  const [array, setArray] = useState([])
+  getStatic().then((response) => {
+    setArray(response)
+    console.log(response)
+  })
   return (
     <div className={traning.main__div}>
       <div className={traning.sub__div}>
@@ -65,7 +104,7 @@ const Traning = () => {
             </div>
           </div>
         </Link>
-        <div className={traning.main__section}>
+        <div className={traning.main__section1}>
           <div className={traning.main__section__part1}>
             <div>
               <p className={traning.part1__text}>From</p>
