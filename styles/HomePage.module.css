@@ -59,7 +59,7 @@
   cursor: pointer;
   /* padding: 11px 10px; */
 
-  margin-top: -10px;
+  /* margin-top: -10px; */
 }
 .top_dropdown_2:hover {
   background-color: #1e185f;
@@ -92,7 +92,7 @@
 } */
 .icons__all {
   margin-top: 31%;
-  margin-left: 4%;
+  margin-left: 28%;
 }
 .short_tab_line_button {
   display: none;
@@ -107,7 +107,7 @@
   /* display: none; */
   position: absolute;
   top: 98px;
-  width: 870px;
+  width: 1004px;
   left: -15px px;
   background: white;
   /* padding: 10px 0px; */

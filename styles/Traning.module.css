@@ -82,3 +82,27 @@
   font-weight: 500;
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .main__section {
+    display: contents;
+  }
+  .main__section1 {
+    width: 159%;
+    padding: 10px;
+    margin-top: -10%;
+  }
+  .main__section {
+    width: 159%;
+    background-color: aqua;
+  }
+  .main__section__part1 {
+    width: 100%;
+  }
+  .Link {
+    text-decoration: none !important;
+    width: 159%;
+    padding: 10px;
+    background-color: white;
+    margin-top: -18%;
+  }
+}

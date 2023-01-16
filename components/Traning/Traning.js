@@ -36,11 +36,11 @@ import Link from "next/link"
 //   fetchData()
 // }, [])
 const Traning = () => {
-  const [array, setArray] = useState([])
-  getStatic().then((response) => {
-    setArray(response)
-    console.log(response)
-  })
+  // const [array, setArray] = useState([])
+  // getStatic().then((response) => {
+  //   setArray(response)
+  //   console.log(response)
+  // })
   return (
     <div className={traning.main__div}>
       <div className={traning.sub__div}>

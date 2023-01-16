@@ -169,7 +169,7 @@ const Header = () => {
             className={home.dropdown__button}
             onClick={() => setDropdown(!dropdown)}
           >
-            <IoIosArrowDropdown style={{ marginTop: "6px" }} />
+            <IoIosArrowDropdown size={25} />
           </div>
           {dropdown && (
             <div className={home.top_small_dropdown__main}>
