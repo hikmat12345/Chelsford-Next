@@ -1,12 +1,32 @@
 import home from "../../styles/HomePage.module.css"
-import { Carousel } from "react-responsive-carousel"
+// import { Carousel } from "react-responsive-carousel"
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import car from "../../styles/carousel.module.css"
 import Link from "next/link"
 import Router from "next/router"
 const VideoContainer = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+}
   return (
-    <div className={home.main__container}>
-      <div className={home.sub__main__row}>
+    <div className='body_all'>
         <div className={home.headerContainer}>
           <h2 className={home.headerContainer__heading}>
             What you’ll get at Chelsford?
@@ -17,26 +37,29 @@ const VideoContainer = () => {
             in the market. Here’s what we provide!
           </p>
         </div>
-        <div className={car.slider}>
-          {/* <Link href="#slide-1" scroll={false}>
-            <h1>1</h1>
-          </Link>
-          <Link href="#slide-2" scroll={false}>
-            <h1>2</h1>
-          </Link>
-          <Link href="#slide-3" scroll={false}>
-            <h1>3</h1>
-          </Link>
-          <Link href="#slide-4" scroll={false}>
-            <h1>4</h1>
-          </Link>
-          <Link href="#slide-5" scroll={false}>
-            <h1>5</h1>
-          </Link> */}
-
-          <div className={car.slides}>
-            <div name="slide-1" id="slide-1">
+    <Carousel
+    swipeable={false}
+    draggable={false}
+    showDots={true}
+    responsive={responsive}
+    ssr={true} // means to render carousel on server-side.
+    infinite={true}
+    autoPlay={false}
+    autoPlaySpeed={1000}
+    keyBoardControl={true}
+    customTransition="all .5"
+    transitionDuration={500}
+    containerClass="carousel-container"
+    removeArrowOnDeviceType={["tablet", "mobile"]}
+    deviceType={true}
+    dotListClass="custom-dot-list-style"
+    itemClass="carousel-item-padding-40-px"
+  >
+    
+   
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -45,9 +68,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div name="slide-2" id="slide-2">
+           
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -56,9 +79,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-3">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -67,9 +90,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-4">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -78,9 +101,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-5">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -89,9 +112,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-6">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -100,9 +123,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-7">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -111,10 +134,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-
-            <div id="slide-8">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -123,9 +145,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-9">
+          
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -134,9 +156,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-10">
+            
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -145,9 +167,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-11">
+          
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -156,9 +178,9 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-            <div id="slide-12">
+           
               <iframe
+              className='iframes_all'
                 width="100%"
                 id="feature_video2"
                 height="100%"
@@ -167,24 +189,10 @@ const VideoContainer = () => {
                 allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
                 allowFullScreen=""
               ></iframe>
-            </div>
-          </div>
-        </div>
-        <div className={home.popular__Course}>
-          {/* <div className={home.Feature_vid_Div}>
-            <div className={home.img__container__Feature}>
-              <iframe
-                width="100%"
-                id="feature_video"
-                height="504px"
-                src="https://www.youtube.com/embed/HFzxQ5OE5FM"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard__write; encrypted__media; gyroscope; picture__in__picture"
-                allowFullScreen=""
-              ></iframe>
-            </div>
-          </div> */}
-          <div className={home.courses__videos}>
+           
+  </Carousel>
+  
+  <div className={home.courses__videos}>
             <div className={home.slider}>
               <div className={home.slider_wrapper}>
                 <div className={home.slider__item}>
@@ -500,9 +508,8 @@ const VideoContainer = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+          
+  </div>
   )
 }
 

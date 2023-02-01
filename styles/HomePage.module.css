@@ -601,7 +601,7 @@ a.courses__text1 {
   font-size: 40px;
   line-height: 47px;
   color: #110b57 !important;
-  margin-top: -3%;
+  margin-top: 3%;
 }
 .headerContainer__text {
   font-family: "Roboto" !important;
@@ -635,6 +635,8 @@ iframe#feature_video {
   overflow: auto;
   overflow-x: scroll;
   scroll-behavior: smooth;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 /* .courses__videos::-webkit-scrollbar-thumb {
   background: #0c083b;
@@ -651,13 +653,13 @@ iframe#feature_video {
   }
 }
 
-.courses__videos::-webkit-scrollbar-button:single-button {
+/* .courses__videos::-webkit-scrollbar-button:single-button {
   background-color: #0c083b;
   display: block;
   scroll-behavior: smooth;
   height: 103px;
   width: 16px;
-}
+} */
 .slider_wrapper {
   display: flex;
   transition: transform 0.6s ease;
@@ -716,7 +718,9 @@ iframe#feature_video {
   font-style: normal;
   font-weight: 300;
   color: #353535 !important;
-  margin: -2%;
+  overflow: hidden;
+  margin-right: 7%;
+  margin-top: -2%;
 }
 /* ############################About##################################################### */
 .home__section__3 {
